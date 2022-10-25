@@ -3,10 +3,8 @@ const props = defineProps(['hero']);
 </script>
 
 <template>
-    <div class="card">
-        <HeroImage />
+        <HeroImage :imageUrl="hero.images.md"/>
         <HeroStats />
-    </div>
 </template>
 
 <style scoped>
