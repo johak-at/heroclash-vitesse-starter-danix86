@@ -1,5 +1,9 @@
+<script setup>
+const emits = defineEmits(["hideBiography"])
+</script>
+
 <template>
-<div class = "modal">
+<div class = "modal" @click="emits('hideBiography')">
     Hallo
 </div>
 </template>

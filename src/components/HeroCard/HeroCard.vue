@@ -7,7 +7,7 @@
     <div grid class="heroCard">
         <HeroImage :imageUrl="hero.images.md"  @showBiography="showBiography = true"/>
         <HeroStats :name="hero.name" :stats="hero.powerstats" :alignment="hero.biography.alignment"/>
-        <HeroModal v-if="showBiography"></HeroModal>
+        <HeroModal v-if="showBiography" @hideBiography="showBiography = false"></HeroModal>
     </div>
 </template>
 
