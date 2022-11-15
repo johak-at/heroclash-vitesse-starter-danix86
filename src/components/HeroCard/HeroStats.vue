@@ -11,12 +11,12 @@
 
 <style scoped>
 .bad {
-    background-color: red;
+    background-image: linear-gradient(135deg, red 0%, yellow 100%);
 }
 .good {
-    background-color: green;
+    background-image: linear-gradient(135deg, green 0%, yellow 100%);
 }
 .neutral {
-    background-color: yellow;
+    background-image: linear-gradient(135deg, grey 0%, yellow 100%);
 }
 </style>
