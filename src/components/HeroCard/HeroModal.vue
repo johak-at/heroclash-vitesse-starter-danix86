@@ -4,7 +4,9 @@ const emits = defineEmits(["hideBiography"])
 
 <template>
 <div class = "modal" @click="emits('hideBiography')">
-    Hallo
+    <ul>
+        <li></li>
+    </ul>
 </div>
 </template>
 
