@@ -13,6 +13,11 @@
 
 <style scoped>
 .heroCard {
+    left: 40%;
+    position: absolute;
+    height: auto;
+    width: 350px;
     grid-template-columns: 1fr 1.2fr;
+    padding-bottom: 100px;
 }
 </style>
