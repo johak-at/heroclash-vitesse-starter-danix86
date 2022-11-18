@@ -32,7 +32,6 @@ const props = defineProps(["biography", "connections", "appearance", "work"])
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: grey;
-    opacity: 0.8;
+    background-color: blue;
     }
 </style>
