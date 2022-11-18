@@ -5,20 +5,14 @@ const props = defineProps(["biography", "connections", "appearance", "work"])
 
 <template>
 <div class = "modal" @click="emits('hideBiography')">
-    <ul v-for="(stuff, key) in biography" :key="key">
-        <li>{{key}}: {{stuff}}</li>
-    </ul>
-    <br />
-    <ul v-for="(stuff, key) in appearance" :key="key">
-        <li>{{key}}: {{stuff}}</li>
-    </ul>
-    <br />
-    <ul v-for="(stuff, key) in connections" :key="key">
-        <li>{{key}}: {{stuff}}</li>
-    </ul>
-    <br />
-    <ul v-for="(stuff, key) in work" :key="key">
-        <li>{{key}}: {{stuff}}</li>
+    <ul >
+        <li v-for="(stuff, key) in biography" :key="key">{{key}}: {{stuff}}</li>
+        <br />
+        <li v-for="(stuff, key) in appearance" :key="key">{{key}}: {{stuff}}</li>
+        <br />
+        <li v-for="(stuff, key) in connections" :key="key">{{key}}: {{stuff}}</li>
+        <br />
+        <li v-for="(stuff, key) in work" :key="key">{{key}}: {{stuff}}</li>
     </ul>
 </div>
 </template>

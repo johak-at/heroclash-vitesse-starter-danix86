@@ -5,9 +5,9 @@
 
 <template>
     <div grid class="heroCard">
-        <HeroImage :imageUrl="hero.images.md"  @showBiography="showBiography = true"/>
+        <HeroImage :imageUrl="hero.images.md"  @show-biography="showBiography = true"/>
         <HeroStats :name="hero.name" :stats="hero.powerstats" :alignment="hero.biography.alignment"/>
-        <HeroModal v-if="showBiography" @hideBiography="showBiography = false" :biography="hero.biography" :connections="hero.connections" :appearance="hero.appearance" :work="hero.work"></HeroModal>
+        <HeroModal v-if="showBiography" @hide-biography="showBiography = false" :biography="hero.biography" :connections="hero.connections" :appearance="hero.appearance" :work="hero.work"></HeroModal>
     </div>
 </template>
 
@@ -16,7 +16,7 @@
     left: 40%;
     position: relative;
     height: auto;
-    width: 350px;
+    width: 400px;
     grid-template-columns: 1fr 1.2fr;
     padding-top: 200px;
 }
