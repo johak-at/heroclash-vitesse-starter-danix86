@@ -14,10 +14,10 @@
 <style scoped>
 .heroCard {
     left: 40%;
-    position: absolute;
+    position: relative;
     height: auto;
     width: 350px;
     grid-template-columns: 1fr 1.2fr;
-    padding-bottom: 100px;
+    padding-top: 200px;
 }
 </style>
