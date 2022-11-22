@@ -18,6 +18,5 @@
     height: auto;
     width: 400px;
     grid-template-columns: 1fr 1.2fr;
-    padding-top: 200px;
 }
 </style>
