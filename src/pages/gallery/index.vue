@@ -4,7 +4,7 @@ import {useCardsStore} from '~/store/cards'
 const cardsStore = useCardsStore();
 const hero = ref(null);
 function switchHero(newNumber) {
-  if(Number.isInteger(newNumber) && newNumber > 0 && newNumber < heroCards.value.length) {
+  if(Number.isInteger(newNumber) && newNumber > 0 && newNumber < cardsStore.heroCards.length) {
     hero.value = cardsStore.heroCards[newNumber - 1].data;
 }
 }
